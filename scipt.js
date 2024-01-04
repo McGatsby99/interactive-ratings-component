@@ -2,6 +2,9 @@
 // button functionality
 
 let selected = document.getElementsByClassName('choice')[0].children;
+let submit = document.getElementsByClassName('submit')[0];
+
+console.log(submit.disabled);
 console.log(selected)
 
 for(let i = 0; i < selected.length; i++){
@@ -12,22 +15,29 @@ for(let i = 0; i < selected.length; i++){
                 selected[j].classList.remove('selected')
             }
         }
-        selected[i].classList.add('selected')
+        selected[i].classList.add('selected');
+        submit.disabled = false;
     })
 }
 
-let submit = document.getElementsByClassName('submit')[0];
-console.log(submit);
+
+
+
+
 
 
 submit.addEventListener('click', () =>{
+
+    // body
     document.getElementsByTagName('body')[0].style.textAlign = 'center';
+
+    // icons
     document.getElementsByClassName('star')[0].style.display = 'none';
     document.getElementsByClassName('thanks-icon')[0].style.display = 'inline-block'
 
+    // picked message
     let picked = document.getElementsByClassName('selected')[0].innerHTML
 
-    // picked message
     document.getElementsByClassName('picked')[0].style.display = 'inline-block'
     document.getElementsByClassName('picked')[0].innerHTML = `You selected ${picked} out of 5`;
 
