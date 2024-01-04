@@ -1,0 +1,150 @@
+:root{
+    /* Primary colors */
+
+    --Orange: hsl(25, 97%, 53%);
+
+    /* Neutral colors */
+
+    --White: hsl(0, 0%, 100%);
+    --Light-Grey: hsl(217, 12%, 63%);
+    --Medium-Grey: hsla(216, 12%, 54%,0.2);
+    --Dark-Blue: hsl(213, 19%, 18%);
+    --Very-Dark-Blue: hsl(216, 12%, 8%);
+
+    font-size: 15px;
+
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* margin bottom utility class */
+.mb{
+    margin-bottom: 1rem;
+}
+
+body{
+    font-family: "Overpass", monospace;
+    background-color: var(--Very-Dark-Blue);
+    color: var(--White);
+}
+
+.container{
+    width: 320px;
+    height: 320px;
+    /* border: 1px solid orange; */
+    margin: 0 auto;
+    padding: 1.5rem;
+    background-color: var(--Dark-Blue);
+    border-radius: 10px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left:50%;
+}
+
+.star{
+    /* border: 1px solid green; */
+    padding: 0.7rem;
+    border-radius: 50%;
+    background-color: var(--Medium-Grey);
+    /* opacity: 0.3; */
+}
+
+.thanks-icon{
+    margin-top: 1.5rem;
+    width: 50%;
+    display: none;
+    
+}
+
+.picked{
+    color: var(--Orange);
+    background-color: var(--Medium-Grey);
+    border-radius: 20px/20px;
+    padding: 5px 10px;
+    margin-bottom: 1.5rem;
+    display: none;
+}
+
+h1{
+    font-size: 1.5rem;
+}
+
+p{
+    color: var(--Light-Grey);
+    font-size: 0.9rem;
+}
+
+.choice{
+    padding: 5px;
+    /* border: 1px solid blue; */
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.choice button{
+    /* color: var(--Light-Grey); */
+    color:var(--Light-Grey);
+    border: none;
+    outline: none;
+    padding: 10px 15px;
+    border-radius: 50%;
+    background-color: var(--Medium-Grey);
+    cursor: pointer;
+    /* opacity: 0.3; */
+}
+
+.choice button:hover{
+    background-color: var(--Orange);
+    color: var(--White);
+}
+
+.choice .selected{
+    color: var(--White);
+    background-color: var(--Light-Grey);
+}
+
+.submit{
+    border: none;
+    outline: none;
+    width: 100%;
+    color: white;
+    background-color: var(--Orange);
+    border-radius: 30px/30px;
+    font-size: 1rem;
+    padding: 0.8rem 0;
+    text-transform: uppercase;
+    cursor: pointer;
+    letter-spacing: 2px;
+}
+
+.submit:hover{
+    background-color: var(--White);
+    color: var(--Orange);
+}
+
+
+
+
+
+
+.attribution {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 97%;
+    left:50%;
+    margin: 0 auto;
+    font-size: 11px; 
+    text-align: center; 
+    }
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+
